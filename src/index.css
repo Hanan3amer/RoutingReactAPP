@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line1 {
+  margin-top: 4px;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+input {
+  border: 0;
+  border-bottom: 1px solid rgba(49, 73, 85, 0.295);
+  width: 50%;
+  margin: 30px 20px;
+background-color: transparent;
+}
+input:focus{
+  background-color: transparent;
+  outline: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #1abc9c;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+li {
+  font-weight: bold;
+}
+
+.over-lay{
+  width: 100%;
+  height: 100%;
+  background-color: #1abc9ccb;
+  align-items: center;
+  opacity: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+}
+.img img{
+  border-radius: 5px;
+}
+.over-lay{
+  transition-duration: 0.3s;
+}
+.img:hover .over-lay{
+  opacity: 1;
+}
+.row{
+  box-sizing: border-box;
+  gap: 20px;
+}
+.row-tw {
+  @apply flex flex-wrap
+}
+
+footer li {
+  border-radius: 50%;
+  border: #fff 1px solid;
+  padding: 5px 10px;
+}
+
+footer p {
+  max-width: 450px;
+}
+
+@media (max-width: 815px) {
+  .foot {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .abc {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .ab {
+    width: 100%;
+  }
+}
+
+.active {
+  border-radius: 5px;
+  background-color: #1abc9c;
+  @apply p-2 text-white
+}
+
+a:hover {
+  color: white;
+}
+.form button{
+  border-radius: 5px;
+  color: white;
+
+}
+#lightBox{
+  align-items: center;
+}
+/* #lightBox-item{
+ background-image: url(assets/poert1.png); 
+} */
